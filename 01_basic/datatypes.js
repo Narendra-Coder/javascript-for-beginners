@@ -1,3 +1,7 @@
+// ******************** Primitive Data Types ********************
+
+
+
 // Declare a variable named 'num' and initialize it with the number 12.
 let num = 12;
 
@@ -48,3 +52,38 @@ console.log(typeof contact);
 // The commented-out line below would log all the variables in a table format,
 // which can be useful for inspecting multiple variables simultaneously.
 // console.table([num, fname, bool, email, contact]);
+
+// Declare a variable named 'symbols' and initialize it with the symbol "70",
+
+let symbols = Symbol(70)
+console.log(symbols)
+
+// Log the data type of 'symbols' (which is 'symbol').
+console.log(typeof(symbols))
+
+// ******************** Non Primitive Data Types ********************
+
+// Object: 'student' is an object that stores key-value pairs representing student information.
+let student = {
+    student_name: 'Narendra', // Property: student_name with a string value
+    student_id: "01253",       // Property: student_id with a string value
+    contact_number: 9800000000 // Property: contact_number with a number value
+};
+console.log(student); // Output: The entire student object
+console.log(student.student_name); // Output: Accessing the 'student_name' property of the student object
+
+console.log(typeof student); // Output: "object" - confirms that 'student' is an object
+
+// Array: 'list_of_fruit' is an array, which is an ordered list of values.
+list_of_fruit = ["apple", "banana", "orange", "mango"];
+console.log(list_of_fruit); // Output: The entire array
+console.log(typeof list_of_fruit); // Output: "object" - in JavaScript, arrays are a type of object
+console.log(list_of_fruit[2]); // Output: Accessing the element at index 2 (third element) of the array
+
+// Function: 'employee' is a function. Functions are callable objects that encapsulate code.
+function employee() { // Parentheses after function name are required
+    let employee_id = 5266; // Declaring 'employee_id' with 'let' for proper scope
+    console.log(employee_id); // Example: To see the value inside the function
+}
+// You would need to call the function to execute its code:
+ employee();
